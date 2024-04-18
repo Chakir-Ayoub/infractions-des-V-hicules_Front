@@ -1,0 +1,21 @@
+.wrap {
+  width: 100%;
+  background-color: #467686;
+  height: 1505px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.floatleft {
+  float:left;
+  width: 50%;
+  height: 100px;
+}
+
+.floatright {
+  float: right;
+  height: 640px;
+  width: 50%;
+}

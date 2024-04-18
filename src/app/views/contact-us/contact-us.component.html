@@ -1,0 +1,35 @@
+<form [formGroup]="FormData" (ngSubmit)="sendEmail(FormData.value)">
+<div class="container">
+    <table>
+      <tr>
+        <td><b> <label style="font-size: 250%;font-family: serif;"> First Name :</label></b></td>
+        <td><input type="text" class="form-control" id="firstname"  name="firstname" formControlName="firstname" placeholder="Your name.."></td>
+      </tr>
+
+      <tr>
+        <td><b> <label style="font-size: 250%;font-family: serif;">Last Name :</label> </b></td>
+        <td><input type="text" class="form-control" id="from_name" name="from_name" formControlName="from_name" placeholder="Your name.."></td>
+      </tr>
+
+      <tr>
+        <td><b><span style="font-size: 250%;font-family: serif;">Email :</span> </b></td>
+        <td><input type="text" class="form-control" id="email" name="email" formControlName="email" placeholder="Your email.." ></td>
+      </tr>
+
+      <tr>
+        <td><b> <span style="font-size: 250%;font-family: serif;"> Subject :</span></b></td>
+        <td><input type="text" class="form-control" id="subject" name="subject" formControlName="subject" placeholder="Subject.."></td>
+      </tr>
+
+      <tr>
+        <td><b> <span style="font-size: 250%;font-family: serif" >Message :</span> </b></td>
+        <td><textarea name="message" class="form-control" id="message" cols="30" formControlName="message" rows="10" placeholder="Message.."></textarea></td>
+      </tr>
+
+      <tr>
+        <button class="btn btn-primary" style="width: 230%;" type="submit" [disabled]="!FormData.valid">Send</button>
+      </tr>
+    </table>
+</div>
+</form>
+

@@ -1,0 +1,13 @@
+.wrapper {
+  height: 300px;
+  background-image: url("../../../assets/images/login.jpg");
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
